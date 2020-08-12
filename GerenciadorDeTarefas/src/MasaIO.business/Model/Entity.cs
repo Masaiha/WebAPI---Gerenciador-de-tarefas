@@ -9,7 +9,7 @@ namespace MasaIO.business.Model
             Id = Guid.NewGuid();
         }
 
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
     }
 }
