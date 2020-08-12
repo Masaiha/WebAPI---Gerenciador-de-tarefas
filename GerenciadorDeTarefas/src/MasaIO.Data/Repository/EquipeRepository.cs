@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MasaIO.Data.Repository
 {
-    class EquipeRepository
+    class EquipeRepository : BaseRepository
     {
     }
 }

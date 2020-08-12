@@ -11,10 +11,15 @@ namespace MasaIO.business.Model
 
         public string Descricao { get; set; }
 
-        public DateTime DataCadastro { get; set; }
-
         public TarefaEstados Estado { get; set; }
 
+        public DateTime DataCadastro { get; set; }
+
         public DateTime DataUltimaAlteracao { get; set; }
+
+        public Guid EquipeId { get; set; }
+
+        /* Relation EF */
+        public Equipe Equipe { get; set; }
     }
 }
