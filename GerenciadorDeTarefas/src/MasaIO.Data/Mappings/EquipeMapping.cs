@@ -14,8 +14,7 @@ namespace MasaIO.Data.Mappings
                 .IsRequired()
                 .HasColumnType("varchar(200)");
 
-            builder.Property(e => e.escudo)
-                .HasColumnType("varchar(30000000)");
+            builder.Property(e => e.escudo);
 
             builder.HasMany(e => e.Tarefas)
                 .WithOne(t => t.Equipe)
