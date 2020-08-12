@@ -11,7 +11,7 @@ namespace MasaIO.business.Model
 
         public string Descricao { get; set; }
 
-        public DateTime DataCriacao { get; set; }
+        public DateTime DataCadastro { get; set; }
 
         public TarefaEstados Estado { get; set; }
 

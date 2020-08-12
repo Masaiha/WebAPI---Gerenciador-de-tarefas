@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9Sb1gqlGpHUEkj9qGHym5S4ploqLZzZyoce6TmIFptqDiKf5QCNtIOV7wzGjqeGnT+yVcT7gazF3bZcVzynQhg==",
+  "dgSpecHash": "3M0VDK8wEoFfzgGE9+CVGPgMr9KvUkWytScrLx5g/0Z9RamIeyDZ1YQrmx2uJUMyzpeYIMyFceT0QaTPrfuFNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\masan\\Documents\\GitHub\\WebAPI---Gerenciador-de-tarefas\\GerenciadorDeTarefas\\src\\MasaIO.Data\\MasaIO.Data.csproj",
   "expectedPackageFiles": [

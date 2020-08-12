@@ -140,7 +140,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\masan\\Documents\\GitHub\\WebAPI---Gerenciador-de-tarefas\\GerenciadorDeTarefas\\src\\MasaIO.business\\MasaIO.business.csproj": {
+                "projectPath": "C:\\Users\\masan\\Documents\\GitHub\\WebAPI---Gerenciador-de-tarefas\\GerenciadorDeTarefas\\src\\MasaIO.business\\MasaIO.business.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
