@@ -1,0 +1,5 @@
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\bin\Debug\netcoreapp3.1\MasaIO.Data.deps.json
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\bin\Debug\netcoreapp3.1\MasaIO.Data.dll
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\obj\Debug\netcoreapp3.1\MasaIO.Data.AssemblyInfoInputs.cache
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\obj\Debug\netcoreapp3.1\MasaIO.Data.AssemblyInfo.cs
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\obj\Debug\netcoreapp3.1\MasaIO.Data.csprojAssemblyReference.cache
