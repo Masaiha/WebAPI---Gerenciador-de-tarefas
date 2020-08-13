@@ -6,10 +6,6 @@ namespace MasaIO.business.Interface.Repository
 {
     public interface ITarefaRepository
     {
-        Task<IEnumerable<Tarefa>> ObterTarefasPorEquipe();
-
-        Task<Tarefa> ObterTarefa();
-
-        Task<Tarefa> ObterTarefasEquipes();
+        Task<IEnumerable<Tarefa>> ObterTarefasEquipes();
     }
 }

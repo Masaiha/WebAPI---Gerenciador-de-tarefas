@@ -1,3 +1,4 @@
+using MasaIO.API.Configurations;
 using MasaIO.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +28,7 @@ namespace MasaIO.API
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            services.ResolveDependenciesInjections();
 
         }
 

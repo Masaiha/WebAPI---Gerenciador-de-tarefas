@@ -55,8 +55,6 @@ C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTar
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\MasaIO.business.pdb
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\MasaIO.Data.pdb
-C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.csproj.CoreCompileInputs.cache
-C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.csproj.CopyComplete
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\staticwebassets\MasaIO.API.StaticWebAssets.Manifest.cache
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\staticwebassets\MasaIO.API.StaticWebAssets.xml

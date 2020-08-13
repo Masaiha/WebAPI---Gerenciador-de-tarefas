@@ -9,7 +9,7 @@ namespace MasaIO.Data.Repository
 {
     public class EquipeRepository : BaseRepository<Equipe>, IEquipeRepository
     {
-        public EquipeRepository(GerenciadorTarefasContext db, DbSet<Equipe> dbSet) : base(db, dbSet) { }
+        public EquipeRepository(GerenciadorTarefasContext context) : base(context) { }
 
         public async Task<IEnumerable<Equipe>> ObterEquipesTarefas()
         {

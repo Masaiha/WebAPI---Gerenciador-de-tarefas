@@ -15,10 +15,10 @@ namespace MasaIO.Data.Repository
         protected readonly GerenciadorTarefasContext Db;
         protected readonly DbSet<TEntity> DbSet;
 
-        protected BaseRepository(GerenciadorTarefasContext db, DbSet<TEntity> dbSet)
+        protected BaseRepository(GerenciadorTarefasContext db)
         {
             Db = db;
-            DbSet = dbSet;
+            DbSet = db.Set<TEntity>();
         }
 
         public virtual async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)
