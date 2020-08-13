@@ -1,4 +1,6 @@
 ﻿using MasaIO.business.Interface.Repository;
+using MasaIO.business.Interface.Services;
+using MasaIO.business.Service;
 using MasaIO.Data.Context;
 using MasaIO.Data.Repository;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +20,8 @@ namespace MasaIO.API.Configurations
             services.AddScoped<IEquipeRepository, EquipeRepository>();
             services.AddScoped<ITarefaRepository, TarefaRepository>();
 
-            
+            services.AddScoped<IEquipeService, EquipeService>();
+            services.AddScoped<ITarefaService, TarefaService>();
 
             return services;
         }

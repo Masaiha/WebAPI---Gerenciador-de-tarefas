@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MasaIO.API.ViewModels;
 using MasaIO.business.Interface.Repository;
+using MasaIO.business.Interface.Services;
 using MasaIO.business.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -15,12 +16,14 @@ namespace MasaIO.API.Controllers
     {
 
         private readonly ITarefaRepository _tarefaRepository;
+        private readonly ITarefaService _tarefaService;
         private readonly IMapper _mapper;
 
-        public TarefaController(ITarefaRepository tarefaRepository, IMapper mapper)
+        public TarefaController(ITarefaRepository tarefaRepository, IMapper mapper, ITarefaService tarefaService)
         {
             _tarefaRepository = tarefaRepository;
             _mapper = mapper;
+            _tarefaService = tarefaService;
         }
 
         [HttpGet]
@@ -44,7 +47,7 @@ namespace MasaIO.API.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(tarefaViewModel);
 
-            await _tarefaRepository.Adicionar(_mapper.Map<Tarefa>(tarefaViewModel));
+            await _tarefaService.Adicionar(_mapper.Map<Tarefa>(tarefaViewModel));
 
             return Ok(tarefaViewModel);
         }
@@ -56,7 +59,7 @@ namespace MasaIO.API.Controllers
 
             if (!ModelState.IsValid) return BadRequest(tarefaViewModel);
 
-            await _tarefaRepository.Atualizar(_mapper.Map<Tarefa>(tarefaViewModel));
+            await _tarefaService.Atualizar(_mapper.Map<Tarefa>(tarefaViewModel));
 
             return Ok(tarefaViewModel);
         }
@@ -68,7 +71,7 @@ namespace MasaIO.API.Controllers
 
             if (tarefa == null) return NotFound();
 
-            await _tarefaRepository.Remover(id);
+            await _tarefaService.Remover(id);
 
             return Ok();
         }

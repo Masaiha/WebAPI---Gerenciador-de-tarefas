@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using MasaIO.API.ViewModels;
 using MasaIO.business.Interface.Repository;
+using MasaIO.business.Interface.Services;
 using MasaIO.business.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MasaIO.API.Controllers
@@ -14,12 +14,14 @@ namespace MasaIO.API.Controllers
     public class EquipeController : MainController
     {
         private readonly IEquipeRepository _equipeRepository;
+        private readonly IEquipeService _equipeService;
         private readonly IMapper _mapper;
 
-        public EquipeController(IEquipeRepository equipeRepository, IMapper mapper)
+        public EquipeController(IEquipeRepository equipeRepository, IMapper mapper, IEquipeService equipeService)
         {
             _equipeRepository = equipeRepository;
             _mapper = mapper;
+            _equipeService = equipeService;
         }
 
         [HttpGet]
@@ -49,7 +51,7 @@ namespace MasaIO.API.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(equipeViewModel);
 
-            await _equipeRepository.Adicionar(_mapper.Map<Equipe>(equipeViewModel));
+            await _equipeService.Adicionar(_mapper.Map<Equipe>(equipeViewModel));
 
             return Ok(equipeViewModel);
         }
@@ -63,7 +65,7 @@ namespace MasaIO.API.Controllers
 
             var equipe = _mapper.Map<Equipe>(equipeViewModel);
 
-            await _equipeRepository.Atualizar(equipe);
+            await _equipeService.Atualizar(equipe);
 
             return Ok(equipeViewModel);
         }
@@ -75,7 +77,7 @@ namespace MasaIO.API.Controllers
 
             if (equipe == null) return NotFound();
 
-            await _equipeRepository.Remover(id);
+            await _equipeService.Remover(id);
 
             return Ok();
         }
