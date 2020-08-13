@@ -61,3 +61,10 @@ C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTar
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.dll
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.pdb
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.genruntimeconfig.cache
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.csproj.CoreCompileInputs.cache
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.API\obj\Debug\netcoreapp3.1\MasaIO.API.MvcApplicationPartsAssemblyInfo.cache

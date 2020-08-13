@@ -1,12 +1,6 @@
 ﻿using AutoMapper;
 using MasaIO.API.ViewModels;
-using MasaIO.business.Interface.Repository;
 using MasaIO.business.Model;
-using MasaIO.Data.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MasaIO.API.Configurations
 {
@@ -16,9 +10,13 @@ namespace MasaIO.API.Configurations
         {
 
             CreateMap<Equipe, EquipeViewModel>().ReverseMap();
-            CreateMap<Tarefa, TarefaViewModel>().ReverseMap();
 
-            
+            CreateMap<Tarefa, TarefaViewModel>()
+                .ForMember(dest => dest.EquipeNome, opt => opt.MapFrom(src => src.Equipe.Nome));
+
+
+            CreateMap<TarefaViewModel, Tarefa>();
+
         }
     }
 }

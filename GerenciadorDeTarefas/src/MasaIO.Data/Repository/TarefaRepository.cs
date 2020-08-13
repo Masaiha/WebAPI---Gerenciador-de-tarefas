@@ -12,7 +12,7 @@ namespace MasaIO.Data.Repository
 {
     public class TarefaRepository : BaseRepository<Tarefa>, ITarefaRepository
     {
-        public TarefaRepository(GerenciadorTarefasContext db, DbSet<Tarefa> dbSet) : base(db, dbSet) { }
+        public TarefaRepository(GerenciadorTarefasContext context) : base(context) { }
 
         public async Task<IEnumerable<Tarefa>> ObterTarefasEquipes()
         {

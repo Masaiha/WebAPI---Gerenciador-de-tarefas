@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace MasaIO.business.Interface.Repository
 {
-    public interface IEquipeRepository
+    public interface IEquipeRepository : IBaseRepository<Equipe>
     {
         Task<IEnumerable<Equipe>> ObterEquipesTarefas();
 

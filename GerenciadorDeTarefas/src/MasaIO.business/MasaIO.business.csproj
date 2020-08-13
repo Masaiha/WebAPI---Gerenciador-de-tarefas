@@ -7,7 +7,6 @@
   <ItemGroup>
     <Folder Include="Service\" />
     <Folder Include="Notification\" />
-    <Folder Include="Interface\" />
   </ItemGroup>
 
 </Project>

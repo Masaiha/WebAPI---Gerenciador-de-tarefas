@@ -21,7 +21,7 @@ namespace MasaIO.Data.Repository
             DbSet = db.Set<TEntity>();
         }
 
-        public virtual async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)
+        public async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)
         {
             return await DbSet.AsNoTracking().Where(predicate).ToListAsync();
         }

@@ -13,7 +13,11 @@ namespace MasaIO.Data.Repository
 
         public async Task<IEnumerable<Equipe>> ObterEquipesTarefas()
         {
-            return await DbSet.AsNoTracking().Include(e => e.Tarefas).ToListAsync();
+            var equipesTarefas = await Db.Equipes.AsNoTracking()
+                                    .Include(e => e.Tarefas)
+                                    .ToArrayAsync();
+
+            return equipesTarefas;
         }
     }
 }
