@@ -6,7 +6,6 @@ C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTar
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\bin\Debug\netcoreapp3.1\MasaIO.Data.pdb
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\bin\Debug\netcoreapp3.1\MasaIO.business.dll
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\bin\Debug\netcoreapp3.1\MasaIO.business.pdb
-C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\obj\Debug\netcoreapp3.1\MasaIO.Data.csproj.CoreCompileInputs.cache
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\obj\Debug\netcoreapp3.1\MasaIO.Data.csproj.CopyComplete
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\obj\Debug\netcoreapp3.1\MasaIO.Data.dll
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.Data\obj\Debug\netcoreapp3.1\MasaIO.Data.pdb

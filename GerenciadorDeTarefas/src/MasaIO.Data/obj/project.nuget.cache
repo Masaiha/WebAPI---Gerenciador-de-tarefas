@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rxXoD3MM84Eusg2xNfmIKzRAzNttA1IGFSb2pLdBp8gqrNNRR9CcHD87kcS3Y3tcm7tjE6Lnav4yHlKojLIx3w==",
+  "dgSpecHash": "PJpdP/Gg8Gl5rcdpbOPQaHHRoNDXB2jZLWSeEiSi9WB5Ywzgha+5PAdra1hfQoQc3/H9FirVaOdeOaGPSG3scw==",
   "success": true,
   "projectFilePath": "C:\\Users\\masan\\Documents\\GitHub\\WebAPI---Gerenciador-de-tarefas\\GerenciadorDeTarefas\\src\\MasaIO.Data\\MasaIO.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\masan\\.nuget\\packages\\fluentvalidation\\9.1.2\\fluentvalidation.9.1.2.nupkg.sha512",
+    "C:\\Users\\masan\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.1.2\\fluentvalidation.aspnetcore.9.1.2.nupkg.sha512",
+    "C:\\Users\\masan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.1.2\\fluentvalidation.dependencyinjectionextensions.9.1.2.nupkg.sha512",
     "C:\\Users\\masan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\masan\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\masan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
