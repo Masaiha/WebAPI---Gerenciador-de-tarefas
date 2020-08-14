@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
+using MasaIO.API.Constantes;
 using MasaIO.API.ViewModels;
 using MasaIO.business.Interface.Repository;
 using MasaIO.business.Interface.Services;
+using MasaIO.business.Interface.Validation;
 using MasaIO.business.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MasaIO.API.Controllers
@@ -19,7 +20,10 @@ namespace MasaIO.API.Controllers
         private readonly ITarefaService _tarefaService;
         private readonly IMapper _mapper;
 
-        public TarefaController(ITarefaRepository tarefaRepository, IMapper mapper, ITarefaService tarefaService)
+        public TarefaController(ITarefaRepository tarefaRepository, 
+                                IMapper mapper, 
+                                ITarefaService tarefaService,
+                                INotificador notificador) : base(notificador)
         {
             _tarefaRepository = tarefaRepository;
             _mapper = mapper;
@@ -45,23 +49,27 @@ namespace MasaIO.API.Controllers
         [HttpPost]
         public async Task<ActionResult<TarefaViewModel>> Adicionar(TarefaViewModel tarefaViewModel)
         {
-            if (!ModelState.IsValid) return BadRequest(tarefaViewModel);
+            if (!ModelState.IsValid) return CustomResponse(tarefaViewModel);
 
             await _tarefaService.Adicionar(_mapper.Map<Tarefa>(tarefaViewModel));
 
-            return Ok(tarefaViewModel);
+            return CustomResponse(tarefaViewModel);
         }
 
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<TarefaViewModel>> Atualizar(Guid id, TarefaViewModel tarefaViewModel)
         {
-            if (id != tarefaViewModel.Id) return BadRequest(tarefaViewModel);
+            if (id != tarefaViewModel.Id)
+            {
+                NotificarErro(MessagensDeErro.IdDiferenteDoIdObjeto);
+                return CustomResponse(tarefaViewModel);
+            }
 
-            if (!ModelState.IsValid) return BadRequest(tarefaViewModel);
+            if (!ModelState.IsValid) return CustomResponse(tarefaViewModel);
 
             await _tarefaService.Atualizar(_mapper.Map<Tarefa>(tarefaViewModel));
 
-            return Ok(tarefaViewModel);
+            return CustomResponse(tarefaViewModel);
         }
 
         [HttpDelete]
@@ -73,7 +81,7 @@ namespace MasaIO.API.Controllers
 
             await _tarefaService.Remover(id);
 
-            return Ok();
+            return CustomResponse();
         }
 
     }

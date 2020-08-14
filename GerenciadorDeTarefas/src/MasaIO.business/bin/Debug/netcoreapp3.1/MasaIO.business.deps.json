@@ -7,10 +7,46 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "MasaIO.business/1.0.0": {
+        "dependencies": {
+          "FluentValidation.AspNetCore": "9.1.2"
+        },
         "runtime": {
           "MasaIO.business.dll": {}
         }
-      }
+      },
+      "FluentValidation/9.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.1.2.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/9.1.2": {
+        "dependencies": {
+          "FluentValidation": "9.1.2",
+          "FluentValidation.DependencyInjectionExtensions": "9.1.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.1.2.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/9.1.2": {
+        "dependencies": {
+          "FluentValidation": "9.1.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.1.2.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {}
     }
   },
   "libraries": {
@@ -18,6 +54,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/9.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+l80lxon18PPJhLEGQGiono5vYhJHuIZUCfGPzO01EFFHOy5ZudF4WmWk+3JNCtKOMnyCwKits/BLhUlTiFsyw==",
+      "path": "fluentvalidation/9.1.2",
+      "hashPath": "fluentvalidation.9.1.2.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/9.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dSc3rOouR1zUZxc+kBYBjR2R8xT3sWT95To/2i9zH61c6S3o+nYbEdsbJBQbIlkIpyhOVAR6noiLwDwenT3sAw==",
+      "path": "fluentvalidation.aspnetcore/9.1.2",
+      "hashPath": "fluentvalidation.aspnetcore.9.1.2.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/9.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z25RmO0NnSrIos/136TJ4nZ+alBg1CG8kyaIGimrUToJZ5G61yiVht79OrodZz7EGV7RDg0fggJAsV13kOvfaQ==",
+      "path": "fluentvalidation.dependencyinjectionextensions/9.1.2",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.9.1.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
     }
   }
 }

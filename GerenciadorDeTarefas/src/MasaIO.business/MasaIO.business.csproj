@@ -8,4 +8,8 @@
     <Folder Include="Notification\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.1.2" />
+  </ItemGroup>
+
 </Project>

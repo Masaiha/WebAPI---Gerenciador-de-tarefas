@@ -3,6 +3,6 @@ C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTar
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.business\bin\Debug\netcoreapp3.1\MasaIO.business.pdb
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.business\obj\Debug\netcoreapp3.1\MasaIO.business.AssemblyInfoInputs.cache
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.business\obj\Debug\netcoreapp3.1\MasaIO.business.AssemblyInfo.cs
+C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.business\obj\Debug\netcoreapp3.1\MasaIO.business.csproj.CoreCompileInputs.cache
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.business\obj\Debug\netcoreapp3.1\MasaIO.business.dll
 C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.business\obj\Debug\netcoreapp3.1\MasaIO.business.pdb
-C:\Users\masan\Documents\GitHub\WebAPI---Gerenciador-de-tarefas\GerenciadorDeTarefas\src\MasaIO.business\obj\Debug\netcoreapp3.1\MasaIO.business.csprojAssemblyReference.cache

@@ -1,6 +1,8 @@
 ﻿using MasaIO.business.Interface.Repository;
 using MasaIO.business.Interface.Services;
+using MasaIO.business.Interface.Validation;
 using MasaIO.business.Service;
+using MasaIO.business.Service.Validation;
 using MasaIO.Data.Context;
 using MasaIO.Data.Repository;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +24,8 @@ namespace MasaIO.API.Configurations
 
             services.AddScoped<IEquipeService, EquipeService>();
             services.AddScoped<ITarefaService, TarefaService>();
+
+            services.AddScoped<INotificador, Notificador>();
 
             return services;
         }

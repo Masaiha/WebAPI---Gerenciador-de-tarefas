@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using MasaIO.API.Constantes;
 using MasaIO.API.ViewModels;
 using MasaIO.business.Interface.Repository;
 using MasaIO.business.Interface.Services;
+using MasaIO.business.Interface.Validation;
 using MasaIO.business.Model;
+using MasaIO.business.Validations.Messages;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,7 +20,10 @@ namespace MasaIO.API.Controllers
         private readonly IEquipeService _equipeService;
         private readonly IMapper _mapper;
 
-        public EquipeController(IEquipeRepository equipeRepository, IMapper mapper, IEquipeService equipeService)
+        public EquipeController(IEquipeRepository equipeRepository, 
+                                IMapper mapper, 
+                                IEquipeService equipeService,
+                                INotificador notificador) : base(notificador)
         {
             _equipeRepository = equipeRepository;
             _mapper = mapper;
@@ -49,25 +55,29 @@ namespace MasaIO.API.Controllers
         [HttpPost]
         public async Task<ActionResult<EquipeViewModel>> Adicionar(EquipeViewModel equipeViewModel)
         {
-            if (!ModelState.IsValid) return BadRequest(equipeViewModel);
+            if (!ModelState.IsValid) return CustomResponse(equipeViewModel);
 
             await _equipeService.Adicionar(_mapper.Map<Equipe>(equipeViewModel));
 
-            return Ok(equipeViewModel);
+            return CustomResponse(equipeViewModel);
         }
 
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<EquipeViewModel>> Atualizar(Guid id, EquipeViewModel equipeViewModel)
         {
-            if (id != equipeViewModel.Id) return BadRequest();
+            if (id != equipeViewModel.Id)
+            {
+                NotificarErro(MessagensDeErro.IdDiferenteDoIdObjeto);
+                return CustomResponse(equipeViewModel);
+            }
 
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(equipeViewModel);
 
             var equipe = _mapper.Map<Equipe>(equipeViewModel);
 
             await _equipeService.Atualizar(equipe);
 
-            return Ok(equipeViewModel);
+            return CustomResponse(equipeViewModel);
         }
 
         [HttpDelete("{id:guid}")]
@@ -79,7 +89,7 @@ namespace MasaIO.API.Controllers
 
             await _equipeService.Remover(id);
 
-            return Ok();
+            return CustomResponse();
         }
     }
 }
