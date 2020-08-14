@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "7WFaMeAlRsj9i++2kCkNDGan5H5TUQ9g1evn/MqqtD50efzdyV2plWmD4wYn4Glul8wrOm6kZLlLf+gnjJg6rA==",
+  "dgSpecHash": "Kl2zqvs48KDWCPeg3vLI+5aFLt8e69iqmW47yUspLDcQ62PZJpTxt1AwAI1BuJ2T1odc14LrTPrX3tWgghKJrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\masan\\Documents\\GitHub\\WebAPI---Gerenciador-de-tarefas\\GerenciadorDeTarefas\\src\\MasaIO.business\\MasaIO.business.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\masan\\.nuget\\packages\\fluentvalidation\\9.1.2\\fluentvalidation.9.1.2.nupkg.sha512",
+    "C:\\Users\\masan\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.1.2\\fluentvalidation.aspnetcore.9.1.2.nupkg.sha512",
+    "C:\\Users\\masan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.1.2\\fluentvalidation.dependencyinjectionextensions.9.1.2.nupkg.sha512",
+    "C:\\Users\\masan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
